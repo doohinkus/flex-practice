@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+  justify-content: space-around;
+}
+
+.cont_card {
+  border: 1px solid blue;
+  height: 200px;
+  font-size: 2em;
+  margin: 2px;
+  flex-grow: 1;
+}
+
+.cont_card:nth-child(6n+1) {
+  flex-basis: 500px;
+}
+
+.cont_card:not(:nth-child(6n+1)) {
+  flex-basis: 180px;
+}
+
+.cont_card:nth-child(4n+1) {
+  background-color: rgb(50, 148, 161);
+}
+
+.cont_card:nth-child(4n+2) {
+  background-color: rgb(205, 197, 122);
+}
+
+.cont_card:nth-child(4n+3) {
+  background-color: rgb(41, 219, 112);
+}
+
+.cont_card:nth-child(4n+4) {
+  background-color: rgb(209, 60, 203);
+}
